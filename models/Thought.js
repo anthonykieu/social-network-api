@@ -11,7 +11,8 @@ const ReactionSchema = new Schema(
         reactionBody: {
             type: String,
             required: true,
-            trim: true
+            trim: true,
+            maxLength: 280
         },
         reactionBy: {
             type: String,
@@ -34,7 +35,8 @@ const ThoughtSchema = new Schema(
     {
         thoughtText: {
             type: String,
-            required: true
+            required: true,
+            maxLength: 280
         },
         createdAt: {
             type: Date,
