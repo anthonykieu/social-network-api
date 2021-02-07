@@ -16,7 +16,8 @@ router
 
 router
     .route('/:thoughtId')
-    .get(getThoughtById);
+    .get(getThoughtById)
+    .put(updateThought);
 //     .delete(removeThought)
 //     .post(addReaction)
 //     .delete(removeReaction);
